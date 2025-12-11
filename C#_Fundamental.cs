@@ -2,8 +2,10 @@
 // // Write, Edit and Run your C# code using C# Online Compiler
 
  using System;
+//  using PATA=ProjectA.TeamA;
+//  using PATB=ProjectA.TeamB;
 
- public class HelloWorld
+ public class C#_Fundamenatals
  {
      public static void Main(string[] args)
     {
@@ -127,7 +129,113 @@
         // foreach(int Num in Nums){
         //     Console.WriteLine(Num);
         // }
-      }
+        
+        
+        
+        //method with refereance variable
+     //     int Year=2024;
+    //     ChangeVariableValue(ref Year);
+    //     Console.WriteLine("The year is : "+Year);
+    
+    //method with out
+        // int Sum=0;
+        // int Product=0;
+        // Calculate(25,63,out Sum,out Product);
+        // Console.WriteLine("Sum={0} , Product={1}",Sum,Product);
+        
+        
+        
+        //params Method
+        // int[] Numbers=new int[3];
+        // Numbers[0]=1003;
+        // Numbers[1]=1004;
+        // Numbers[2]=1005;
+        // ParamMethod(Numbers);
+        
+        
+        
+        //namespace
+        
+        // PATA.A.Print();
+        // PATB.A.Print();
+        
+        //class
+        
+        // Console.WriteLine("Enter your First name");
+        // string FirstName=Console.ReadLine();
+        
+        // Console.WriteLine("Enter your Last name");
+        // string LastName=Console.ReadLine();
+        
+        // Customer Customer1=new Customer();
+        
+        // Customer1.FullName();
+        
+        // Customer Customer2=new Customer(FirstName,LastName);
+        
+        // Customer2.FullName();
+        
+        
+    }
+ 
+    //   public static void ChangeVariableValue(ref int n){
+    //       n=2025;
+    //   }
+    // public static void Calculate(int FirstNumber,int SecondNumber,out int Sum,out int Product){
+    //     Sum=FirstNumber+SecondNumber;
+    //     Product=FirstNumber*SecondNumber;
+    // }
+    
+    //Params Method
+    // public static void ParamMethod(params int[] Numbers){
+    //     Console.WriteLine("Size of Array is : "+Numbers.Length);
+    //     foreach(int Num in Numbers){
+    //         Console.Write(Num+" ");
+    //     }
+        
+    // }
     
      
  }
+ 
+ //namespace
+ 
+//  namespace ProjectA{
+//         namespace TeamA{
+//             class A{
+//                 public static void Print(){
+//                     Console.WriteLine("This Team A Class A Print Method");
+//                 }
+//             }
+//         }
+//         namespace TeamB{
+//             class A{
+//                 public static void Print(){
+//                     Console.WriteLine("This Team B Class A Print Method");
+//                 }
+//             }
+//         }
+// }
+
+//class
+
+// class Customer{
+//     string _firstname;
+//     string _lastname;
+    
+    
+//     public Customer()
+//         :this("No FirstName Provided","No FirstName Provided")
+//     {
+        
+//     }
+    
+//     public Customer(string FirstName,string LastName){
+//         this._firstname=FirstName;
+//         this._lastname=LastName;
+//     }
+    
+//     public void FullName(){
+//         Console.WriteLine("FullName Of The Customer is :"+this._firstname+" "+this._lastname);
+//     }
+// }
