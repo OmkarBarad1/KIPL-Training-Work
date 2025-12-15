@@ -1,9 +1,7 @@
-// // Online C# Editor for free
-// // Write, Edit and Run your C# code using C# Online Compiler
-
  using System;
 //  using PATA=ProjectA.TeamA;
 //  using PATB=ProjectA.TeamB;
+using System.Collections.Generic;
 
  public class CSharp_Fundamenatals
  {
@@ -255,7 +253,41 @@
         // Shop s= new Shop();
         // s.Print();
         
+        //Delegate
+        
+        // MyDelegate del = new MyDelegate(Hello);
+        // del("Hello From Delegate");
+        
+        // List<Employee> employeeList = new List<Employee>();
+        
+        // employeeList.Add(new Employee() { ID = 101,Name = "Marry", Salary = 100000, Experiance = 5});
+        // employeeList.Add(new Employee() { ID = 102,Name = "Sam", Salary = 200000, Experiance = 3});
+        // employeeList.Add(new Employee() { ID = 103,Name = "Arron", Salary = 500000, Experiance = 6});
+        
+        //IsPromotable isPromotable = new IsPromotable(Promote);
+        //Employee.PromoteEmployee(employeeList,isPromotable);
+        // Employee.PromoteEmployee(employeeList,emp=> emp.Experiance>=5);
+        
+        
+        
     }
+    
+    //Delegate
+    
+    // public static void Hello(string Message)
+    //     {
+    //         Console.WriteLine(Message);
+    //     }
+    
+    // public static bool Promote(Employee emp)
+    // {
+    //     if(emp.Experiance >= 5)
+    //     {
+    //         return true;
+    //     }
+    //     return false;
+    // }
+    
     
     
  
@@ -602,4 +634,29 @@
 //     // {
 //     //     Console.WriteLine("This is Print of Abstract Class");
 //     // }
+// }
+
+// Delegate
+
+//public delegate void MyDelegate(string Message);
+
+// public delegate bool IsPromotable(Employee emp1);
+
+// public class Employee
+// {
+//     public int ID { get; set; }
+//     public string Name { get; set; }
+//     public int Salary { get; set; }
+//     public int Experiance { get; set; }
+    
+//     public static void PromoteEmployee(List<Employee> employeeList, IsPromotable IsEligiableToPromote )
+//     {
+//         foreach(Employee emp in employeeList)
+//         {
+//             if(IsEligiableToPromote(emp))
+//             {
+//                 Console.WriteLine(emp.Name +" is Promoted");
+//             }
+//         }
+//     }
 // }

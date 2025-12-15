@@ -27,7 +27,7 @@ class Vehicle
 
     public virtual double CalculateInsurance()
     {
-        return price * 0.05;   // Default 5%
+        return price * 0.05; 
     }
 
     public virtual void Display()
@@ -57,11 +57,17 @@ class Bike : Vehicle
         double baseIns = base.CalculateInsurance();
 
         if (engineCC <= 150)
+	{
             return baseIns + Price * 0.02;
+	}
         else if (engineCC <= 300)
+	{
             return baseIns + Price * 0.05;
+	}
         else
+	{
             return baseIns + Price * 0.08;
+	}
     }
 
     public override void Display()
@@ -151,7 +157,9 @@ class VehicleManagement
         for (int i = 1; i < count; i++)
         {
             if (vehicles[i].Price > max.Price)
+	    {
                 max = vehicles[i];
+	    }
         }
 
         Console.WriteLine("Maximum Price Vehicle:");
@@ -165,7 +173,9 @@ class VehicleManagement
         for (int i = 1; i < count; i++)
         {
             if (vehicles[i].CalculateInsurance() > max.CalculateInsurance())
-                max = vehicles[i];
+            {
+		   max = vehicles[i];
+	    }
         }
 
         Console.WriteLine("Maximum Insurance Vehicle:");
